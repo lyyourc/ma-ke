@@ -1,0 +1,18 @@
+$background: #f7f7f7;
+$border: #ddd;
+
+.preview {
+  width: 50vw;
+  padding: 1em;
+
+  pre {
+    padding: 16px;
+    background-color: $background;
+  }
+
+  blockquote {
+    margin-left: 0;
+    padding: 0 15px;
+    border-left: 4px solid $border;
+  }
+}

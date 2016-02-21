@@ -1,0 +1,14 @@
+.editor {
+  width: 50vw;
+
+  textarea {
+    width: 100%;
+    height: 100vh;
+    resize: none;
+
+    border: none;
+    border-right: 1px solid #ccc;
+
+    padding: 1em
+  }
+}
