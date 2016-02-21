@@ -1,0 +1,17 @@
+{
+    "extends": "standard",
+    "parser": "babel-eslint",
+    "plugins": [
+      "standard"
+    ],
+
+    "env": {
+      "browser": true,
+      "jasmine": true
+    },
+
+    "rules": {
+      "arrow-parens": [0],
+      "curly": [0]
+    }
+}

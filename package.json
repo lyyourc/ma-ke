@@ -1,0 +1,50 @@
+{
+  "name": "es6-setup",
+  "version": "0.0.1",
+  "description": "A starter kit for using es6 right now. NO REACT!",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "lint": "eslint . --ext .js || true",
+    "test": "karma start karma.conf.js"
+  },
+  "keywords": [
+    "es2015",
+    "es6",
+    "starter",
+    "webpack"
+  ],
+  "author": "Drake Leung",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.4.5",
+    "babel-eslint": "^4.1.8",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.0.0",
+    "eslint-config-standard": "^5.1.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-promise": "^1.0.8",
+    "eslint-plugin-standard": "^1.3.2",
+    "html-webpack-plugin": "^2.7.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-webpack": "^1.7.0",
+    "node-sass": "^3.4.2",
+    "phantomjs-prebuilt": "^2.1.3",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.7.3"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.3.14",
+    "babel-runtime": "^6.3.19"
+  }
+}
