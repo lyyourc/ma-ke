@@ -2,12 +2,20 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   line-height: 1.7;
-  overflow-y: hidden;
 }
 
 main {
   display: flex;
+  align-items: stretch;
+
+  > section {
+    flex: 1;
+  }
 }

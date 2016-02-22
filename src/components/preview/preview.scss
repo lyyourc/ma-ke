@@ -1,18 +1,39 @@
-$background: #f7f7f7;
+$code-background: #f7f7f7;
+$inline-code: rgba(0, 0, 0, 0.04);
 $border: #ddd;
+$anchor: #5badf0;
 
 .preview {
-  width: 50vw;
-  padding: 1em;
+  padding: 1rem;
 
   pre {
-    padding: 16px;
-    background-color: $background;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: $code-background;
   }
 
   blockquote {
     margin-left: 0;
     padding: 0 15px;
     border-left: 4px solid $border;
+  }
+
+  code {
+    background: $inline-code;
+    padding: 0.2rem;
+  }
+
+  a {
+    color: $anchor;
+    text-decoration: none;
+  }
+
+  h1, h2 {
+    border-bottom: 1px solid #eee;
+  }
+
+  h1, h2, h3 {
+    margin-top: 0;
+    padding-bottom: .5rem;
   }
 }
