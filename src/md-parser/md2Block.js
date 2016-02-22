@@ -5,10 +5,10 @@ const getChildren = (type, matched) => {
     case 'img':
       return []
 
-    case 'p': return [matched[0]]
-
     default:
-      return [matched[2]]
+      return [
+        matched[2]
+      ]
   }
 }
 
@@ -16,8 +16,8 @@ const getAttrs = (type, matched) => {
   switch (type) {
     case 'img':
       return {
-        alt: matched[1].slice(1, -1),
-        src: matched[2].slice(1, -1)
+        alt: matched[1],
+        src: matched[2]
       }
 
     default:
@@ -29,19 +29,22 @@ const md2Block = (block) => {
   if (block == null) return
 
   let matched = null
+  let format = null
 
-  const format = formatter.find(f => {
+  format = formatter.find(f => {
     matched = block.match(f.pattern)
     return matched != null
   })
 
-  // node(type, attrs, children)
+  const type = (format == null)
+    ? 'p'
+    : (format.map.search(/^h\d?/) !== -1)
+      ? format.map = 'h' + matched[1].length
+      : format.map
 
-  const type = format.map !== 'h'
-    ? format.map
-    : format.map += matched[1].length
-
-  const children = getChildren(type, matched)
+  const children = (type === 'p')
+    ? [block]
+    : getChildren(type, matched)
 
   const attrs = getAttrs(type, matched)
 

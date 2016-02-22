@@ -20,7 +20,7 @@ module.exports = function (config) {
     // avoid walls of useless text
     webpackMiddleware: {
       noInfo: true
-    },
-    singleRun: true
+    }
+    // singleRun: true
   })
 }

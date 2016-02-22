@@ -1,19 +1,24 @@
 {
-  "name": "es6-setup",
+  "name": "ma-ke",
   "version": "0.0.1",
-  "description": "A starter kit for using es6 right now. NO REACT!",
+  "description": "a simple Markdown editor online",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "lint": "eslint . --ext .js || true",
+    "deploy": "npm run build && git subtree push --prefix build origin gh-pages",
     "test": "karma start karma.conf.js"
   },
   "keywords": [
+    "Markdown",
+    "editor",
+    "online",
     "es2015",
-    "es6",
-    "starter",
     "webpack"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrakeLeung/ma-ke"
+  },
   "author": "Drake Leung",
   "license": "MIT",
   "devDependencies": {
@@ -29,6 +34,7 @@
     "eslint-loader": "^1.3.0",
     "eslint-plugin-promise": "^1.0.8",
     "eslint-plugin-standard": "^1.3.2",
+    "gh-pages": "^0.10.0",
     "html-webpack-plugin": "^2.7.1",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.21",

@@ -1,3 +1,5 @@
+import parsePara from './parsePara'
+
 const block2HTML = ({
   type = '',
   attrs = {},
@@ -10,7 +12,10 @@ const block2HTML = ({
   })
 
   children.forEach(child => {
-    if (typeof child === 'string')
+    if (type === 'p')
+      el.innerHTML = parsePara(child)
+
+    else if (typeof child === 'string')
       el.textContent = child
 
     else

@@ -19,16 +19,9 @@ const formatter = [
 
   // image
   {
-    pattern: /^!(\[.*\])(\(.*\))/,
+    pattern: /^!\[(.*)\]\((.*)\)/,
     map: 'img'
-  },
-
-  // paragraph
-  {
-    pattern: /(.*)/,
-    map: 'p'
   }
-
 ]
 
 export default formatter

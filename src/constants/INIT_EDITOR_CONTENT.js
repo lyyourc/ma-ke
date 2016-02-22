@@ -1,17 +1,19 @@
 const INIT_EDITOR_CONTENT =
-`# Write a simple MarkDown Parser
+`# ma-ke
 
-I'll teach you how to write a MarkDown parser.
+a simple markdown editor, [check it out](https://github.com/DrakeLeung/ma-ke)
 
-> MarkDown is handy for writing - Drake Leung
+> Mama said: Markdown is awesome
 
 ## Heading 2
 
 \`\`\`
-## heading 2
+I am a code block
 \`\`\`
 
-![sicp](https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ52iHgZwgP9rtAW6TUwG1aAhzRSnnXgiTdoyz9WRYbkNMvru2Ffw)
+a image
+
+![wizard](http://browserify.org/images/wizard.png)
 
 `
 

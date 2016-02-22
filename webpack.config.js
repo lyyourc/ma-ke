@@ -19,10 +19,7 @@ const common = {
 
   output: {
     path: PATHS.build,
-    filename: 'mdit.js',
-    library: 'mdit',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    filename: 'build.js'
   },
 
   plugins: [
